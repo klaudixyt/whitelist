@@ -1,0 +1,36 @@
+local meinecodesrightnow = {
+    "b3453d0cd0b2da5e062c1cbeac080f78",
+    "dc89jf13j5r3i5315i31531oiga8p091",
+    "dc89a8d84733b8930640e40080f8fefc",
+    "08f656a545f32d6cbcff86b44fbf1426",
+    "d6a2f6ba86f124883661c118216fa7ea",
+    "a5e2eae0ca8116dccf24f4f23959a831",
+    "ec49f819c8420a010bfdec88caf64cba",
+}
+
+local counter = 1
+local keyCheck
+for i,v in pairs(meinecodesrightnow) do
+    if counter == #meinecodesrightnow then
+    meinecodesrightnow = ""
+    game.Players.LocalPlayer:Kick("Not a valid key!")
+    else
+        if v == _G.ae2e9f0c then
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/klaudixyt/privscripts/main/allgames.txt"))()
+     print("You got whitelisted, enjoy you'r script")
+            keyCheck = _G.ae2e9f0c
+            meinecodesrightnow = ""
+        else
+            counter = counter +1
+        end
+    end
+end
+
+while true do
+    if _G.ae2e9f0c == keyCheck then
+        --not spoffed
+    else
+        game.Players.LocalPlayer:Kick("Go buy a hub leecher!")
+    end
+    wait()
+end
